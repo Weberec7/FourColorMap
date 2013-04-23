@@ -1,4 +1,5 @@
-Four Color Map is a small Java project meant to color a map with 4 colors.  In theory, any 2D map requires just 4 colors to distinguish any one 'country' border from another.
+Four Color Map is a small Java project meant to color a map with 4 colors.  
+In theory, any 2D map requires just 4 colors to distinguish any one 'country' border from another.
 This means that no two countries of the same color will share a border.
 
 Setup:
@@ -9,7 +10,8 @@ Open the Project in Netbeans
 Trial Run:
 
 1. Run the main driver class in the FourColorMap package.
-2. At the user prompt (Input the name of the file you would like to use.), type in "dia1.txt".  This specifies which file or map you want to color.
+2. At the user prompt (Input the name of the file you would like to use.), type in "dia1.txt".
+This specifies which file or map you want to color.
 3. Look at the output.
 4. Re-Run to try dia2.txt or dia3.txt (other sample maps)
 
@@ -19,27 +21,29 @@ Lines: (some number)  //This states the number of countries in the submitted tex
 
 Steps: //Here is an outprint of all the steps taken to color the map in accordance to the backtracking algorithm.
 
-Country: (some number) (some number)  //The first number indicates the country.  The second number indicates the color given to that country on that step. (1-4, or F)  F indicates that no color was able to be assigned to the country (point of backtracking).
+Country: (some number) (some number)  //The first number indicates the country.  
+//The second number indicates the color given to that country on that step. (1-4, or F)
+//F indicates that no color was able to be assigned to the country (point of backtracking).
 
 //Next is the final state for all of the countries along with their history
 Country: //which country
 History: //Colors attempted for this country before the backtracking algorithm had to change it.
 Current Color: //The final color for this country
 
-Summary:  //I created this program to help grading homework, so it was important to generate a shorthand for the above information.
-
+Summary:
+//I created this program to help grade homework.
+//So it was important to generate a shorthand for the above information.
 (country number) (final color)
 
 Creating Your Own 2D Map txt file:
-
 1. Create a map (for exmaple: Europe) on a piece of paper.
 2. Draw several countries (various shapes and sizes) that share borders (rectangle's are easiest to draw).
 3. Number each country (an enclosed shape).
 4. For each country, mark down the neighboring countries (shapes that share a border; corners do not count) of lower value, then mark a 0 and continue on the next line.
 // Each line signifies a country, spaces separate each value including the 0, and the 0's mark the end of that country (I know I cheated...)
 5. Place the text file within the FourColor package.
-Example Text File with Explanation of Each Line:
 
+Example Text File with Explanation of Each Line:
 0 //This line (Country 1) will always be just 0 because it cannot share a border with a country of lesser value
 1 0 //Country 2 shares a border with country 1
 1 2 0 //Country 3 shares a border with countries 1 and 2
