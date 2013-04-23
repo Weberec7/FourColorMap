@@ -39,9 +39,10 @@ Creating Your Own 2D Map txt file:
 1. Create a map (for exmaple: Europe) on a piece of paper.
 2. Draw several countries (various shapes and sizes) that share borders (rectangle's are easiest to draw).
 3. Number each country (an enclosed shape).
-4. For each country, mark down the neighboring countries (shapes that share a border; corners do not count) of lower value, then mark a 0 and continue on the next line.
-// Each line signifies a country, spaces separate each value including the 0, and the 0's mark the end of that country (I know I cheated...)
-5. Place the text file within the FourColor package.
+4. For each country, mark down the neighboring countries (shapes that share a border; corners do not count)
+of lower value, then mark a 0 and continue on the next line. (Each line signifies a country, spaces separate
+each value including the 0, and the 0's mark the end of that country ~I know I cheated...)
+5. Copy the text file into the FourColor package.
 
 Example Text File with Explanation of Each Line:
 0 //This line (Country 1) will always be just 0 because it cannot share a border with a country of lesser value
